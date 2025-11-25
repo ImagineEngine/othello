@@ -136,7 +136,7 @@ def endgame(col, done_game_surf):
         overlay = pygame.Surface((SCREEN_WIDTH, SCREEN_HEIGHT), pygame.SRCALPHA)
         overlay.fill((0, 0, 0, 150))
 
-        msg = f'{'Black' if col == -1 else 'White'} wins!'
+        msg = f"{'Black' if col == -1 else 'White'} wins!"
         if col == 0:
             msg = "Draw!"
         text = font_l.render(msg, True, (255, 255, 255, 255))
@@ -203,3 +203,4 @@ def done():
 game_state = game_screen
 while True:
     game_state = game_state()
+
